@@ -1,0 +1,16 @@
+
+
+public BST buildTreap(Node[] arr){
+  
+  arr = sortByPriority(arr); 
+  BST treap = new BST();
+  
+  for(i from (arr.length-1) to 0)
+  {
+    treap.add(arr[i].key);
+  }
+  
+  return treap; 
+  
+
+}
